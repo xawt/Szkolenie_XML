@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cenniki>
+	<cennik>
+		<data>2016-11-16</data>
+
+		<towar id-kategorii="herbata" id-towaru="lipton100">
+			<nazwa>Lipton 100 szt.</nazwa>
+			<cena>12</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="herbata" id-towaru="lipton25">
+			<nazwa>Lipton 25 szt.</nazwa>
+			<cena>6.50</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="kawa" id-towaru="jacobs-k">
+			<nazwa>Jacobs Krönung</nazwa>
+			<cena>21</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="kawa" id-towaru="tchibo">
+			<nazwa>Tchibo Family</nazwa>
+			<cena>19</cena>
+			<vat>23</vat>
+		</towar>
+	</cennik>
+<!-- ================================= -->
+	<cennik>
+		<data>2016-11-17</data>
+
+		<towar id-kategorii="czeko" id-towaru="wedel-g">
+			<nazwa>Wedel gorzka</nazwa>
+			<cena>2.35</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="herbata" id-towaru="lipton100">
+			<nazwa>Lipton 100 szt.</nazwa>
+			<cena>13</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="herbata" id-towaru="lipton25">
+			<nazwa>Lipton 25 szt.</nazwa>
+			<cena>7.50</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="herbata" id-towaru="dilmah">
+			<nazwa>Dilmah black tea</nazwa>
+			<cena>16</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="kawa" id-towaru="tchibo">
+			<nazwa>Tchibo Family</nazwa>
+			<cena>23</cena>
+			<vat>23</vat>
+		</towar>
+	</cennik>
+<!-- ================================= -->
+	<cennik>
+		<data>2016-11-18</data>
+
+		<towar id-kategorii="herbata" id-towaru="lipton100">
+			<nazwa>Lipton 100 szt.</nazwa>
+			<cena>11.11</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="herbata" id-towaru="lipton25">
+			<nazwa>Lipton 25 szt.</nazwa>
+			<cena>7.50</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="kawa" id-towaru="jacobs-k">
+			<nazwa>Jacobs Krönung</nazwa>
+			<cena>20.5</cena>
+			<vat>23</vat>
+		</towar>
+		
+		<towar id-kategorii="czeko" id-towaru="wedel-m">
+			<nazwa>Wedel mleczna</nazwa>
+			<cena>2.35</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="herbata" id-towaru="dilmah">
+			<nazwa>Dilmah black tea</nazwa>
+			<cena>17</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="kawa" id-towaru="tchibo">
+			<nazwa>Tchibo Family</nazwa>
+			<cena>20</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="czeko" id-towaru="wedel-g">
+			<nazwa>Wedel gorzka</nazwa>
+			<cena>2.25</cena>
+			<vat>23</vat>
+		</towar>
+	</cennik>
+<!-- ================================= -->
+	<cennik>
+		<data>2016-11-19</data>
+
+		<towar id-kategorii="herbata" id-towaru="lipton100">
+			<nazwa>Lipton 100 szt.</nazwa>
+			<cena>12</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="czeko" id-towaru="wedel-g">
+			<nazwa>Wedel gorzka</nazwa>
+			<cena>2.50</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="kawa" id-towaru="jacobs-k">
+			<nazwa>Jacobs Krönung</nazwa>
+			<cena>21</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="herbata" id-towaru="dilmah">
+			<nazwa>Dilmah black tea</nazwa>
+			<cena>16.12</cena>
+			<vat>23</vat>
+		</towar>
+
+		<towar id-kategorii="kawa" id-towaru="tchibo">
+			<nazwa>Tchibo Family</nazwa>
+			<cena>19</cena>
+			<vat>23</vat>
+		</towar>
+	</cennik>
+</cenniki>
