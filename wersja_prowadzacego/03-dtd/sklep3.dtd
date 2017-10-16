@@ -15,11 +15,11 @@
 <!ELEMENT br EMPTY>
 <!ELEMENT inny-towar EMPTY>
 
-<!ATTLIST inny-towar id CDATA #REQUIRED>
+<!ATTLIST inny-towar id IDREF #REQUIRED>
 
 
 <!ATTLIST towar
-	id CDATA #REQUIRED
+	id ID #REQUIRED
 	id-kategorii CDATA #IMPLIED
 >
 

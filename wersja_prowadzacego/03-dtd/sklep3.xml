@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sklep SYSTEM "sklep3.dtd" >
 <sklep>
-  <towar id="1" id-kategorii="herbata">
+  <towar id="T1" id-kategorii="herbata">
     <nazwa>Lipton 50 szt.</nazwa>
     <cena>8.75</cena>
     <opis>
-    	Mniejsza paczka herbaty niż <inny-towar id="2"/>
+    	Mniejsza paczka herbaty niż <inny-towar id="T2"/>
     </opis>
   </towar>
   
-  <towar id="2" id-kategorii="herbata">
+  <towar id="T2" id-kategorii="herbata">
     <nazwa>Lipton 100 szt.</nazwa>
     <cena>15</cena>
     <opis>
-    	Większa paczka herbaty niż <inny-towar id="1"/>
+    	Większa paczka herbaty niż <inny-towar id="T7"/>
     </opis>
   </towar>
   
-  
+  <towar id="T2" id-kategorii="kawa">
+    <nazwa>Kawa Jacobs</nazwa>
+    <cena>15</cena>
+    <opis>
+    </opis>
+  </towar>
 </sklep>
