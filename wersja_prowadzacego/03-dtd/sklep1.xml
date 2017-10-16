@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sklep SYSTEM "sklep.dtd" >
+<sklep>
+  <towar id="123">
+  	<nazwa>Mleko</nazwa>
+  	<cena>2.50</cena>
+  	<opis>
+  		Mleko jest dobre <em>ale nie dla każdego</em>.<br/>
+  		Druga linia. <link href="http://pl.wikipedia.org/wiki/mleko">zob. także artykuł</link>
+  	</opis>
+  </towar>
+
+  <towar id="124">
+  	<nazwa>Obiad</nazwa>
+  	<cena>21.50</cena>
+    <opis>Ala ma kota. <em>pierwsze wyróżnienie</em> <em>drugie wyróżnienie</em></opis>
+    <cena-promocyjna od="2017-10-15" do="2017-10-20">10.99</cena-promocyjna>
+  </towar>
+  
+</sklep>

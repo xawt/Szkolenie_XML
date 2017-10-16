@@ -1,0 +1,25 @@
+<!ELEMENT sklep (towar*)>
+
+<!ELEMENT towar (nazwa, cena, opis?, cena-promocyjna*)>
+
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ELEMENT cena-promocyjna (#PCDATA)>
+
+<!ELEMENT opis (#PCDATA | em | link | br)* >
+<!ELEMENT em (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT br EMPTY>
+
+<!ATTLIST towar
+	id CDATA #REQUIRED
+	id-kategorii CDATA #IMPLIED
+>
+
+<!ATTLIST cena-promocyjna
+	od CDATA #REQUIRED
+	do CDATA #IMPLIED
+>
+
+<!ATTLIST link href CDATA #REQUIRED>
+
