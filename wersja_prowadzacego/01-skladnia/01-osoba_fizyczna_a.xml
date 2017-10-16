@@ -2,23 +2,22 @@
 	<imie>Jan</imie>
 	<nazwisko>Kowalski</nazwisko>
 	
-	<adres rodzaj="zameldowania">
+	<adres-zameldowania>
 		<ulica>Spokojna</ulica>
 		<nr-domu>32</nr-domu>
 		<nr-mieszkania>3</nr-mieszkania>
 		<kod-pocztowy>96-300</kod-pocztowy>
 		<miejscowosc>Żyrardów</miejscowosc>
-	</adres>
+	</adres-zameldowania>
 
-	<adres rodzaj="zamieszkania">
+	<adres-zamieszkania>
 		<ulica>Niespokojna</ulica>
 		<nr-domu>32</nr-domu>
 		<nr-mieszkania>3</nr-mieszkania>
 		<kod-pocztowy>12-345</kod-pocztowy>
 		<miejscowosc>Otwock</miejscowosc>
-	</adres>
+	</adres-zamieszkania>
 	
-	<tel rola="prywatny" typ="kom">123456789</tel>
-	<tel rola="sluzbowy" typ="stacjonarny">123456789</tel>
+	<tel>123456789</tel>
 	
 </osoba>
