@@ -1,0 +1,12 @@
+<zamowienie>
+
+	<osoba xmlns="http://www.vavatech.pl/szkolenie_xml/osoby">
+		<imie>Jan</imie>
+		<nazwisko>Kowalski</nazwisko>
+	</osoba>
+
+	<towar xmlns="urn:sklep">
+		<nazwa>Mleko</nazwa>
+		<cena>2.75</cena>
+	</towar>
+</zamowienie>
