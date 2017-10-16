@@ -1,0 +1,15 @@
+<osoba plec="M">
+	<imie>Jan</imie>
+	<nazwisko>Kowalski</nazwisko>
+	
+	<adres>
+		<ulica>Spokojna</ulica>
+		<nr-domu>32</nr-domu>
+		<nr-mieszkania>3</nr-mieszkania>
+		<kod-pocztowy>96-300</kod-pocztowy>
+		<miejscowosc>Żyrardów</miejscowosc>
+	</adres>
+	
+	<tel>123456789</tel>
+	
+</osoba>
