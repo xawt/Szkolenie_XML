@@ -6,13 +6,17 @@
 <!ELEMENT cena (#PCDATA)>
 <!ELEMENT cena-promocyjna (#PCDATA)>
 
-<!ENTITY % Tekst "#PCDATA | em | link | br"> 
+<!ENTITY % Tekst "#PCDATA | em | link | br | inny-towar"> 
 
 <!ELEMENT opis (%Tekst;)* >
 
 <!ELEMENT em (%Tekst;)*>
 <!ELEMENT link (%Tekst;)*>
 <!ELEMENT br EMPTY>
+<!ELEMENT inny-towar EMPTY>
+
+<!ATTLIST inny-towar id CDATA #REQUIRED>
+
 
 <!ATTLIST towar
 	id CDATA #REQUIRED
