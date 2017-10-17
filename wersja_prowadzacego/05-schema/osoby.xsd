@@ -24,6 +24,15 @@
 					</complexType>
 				</element>
 			</sequence>
+			
+			<attribute name="plec">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="kobieta"/>
+						<enumeration value="mężczyzna"/>
+					</restriction>
+				</simpleType>
+			</attribute>
 		</complexType>
 	</element>
 </schema>

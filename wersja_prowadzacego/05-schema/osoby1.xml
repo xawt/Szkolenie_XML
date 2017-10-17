@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osoba xmlns="http://www.example.org/osoby"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.example.org/osoby osoby.xsd ">
+	xsi:schemaLocation="http://www.example.org/osoby osoby.xsd "
+	
+	plec="kobieta" >
 	
 	<imie>Jan</imie>
 	<imie>Maria</imie>
