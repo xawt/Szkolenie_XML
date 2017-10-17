@@ -11,6 +11,8 @@
     <s:nazwa>Odkurzacz</s:nazwa>
     <s:cena>349</s:cena>
     <s:vat>23</s:vat>
-    <s:opis>Opis okurzacza</s:opis>
+    <s:opis>Opis okurzacza. <s:em>Duża moc</s:em>
+    	<s:link href="http://wikipedia.org">Wikipedia</s:link>
+    </s:opis>
   </s:towar>
 </s:sklep>
