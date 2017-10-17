@@ -7,20 +7,19 @@
 				<xs:element name="imie" type="xs:string" maxOccurs="3"/>
 				<xs:element name="nazwisko" type="xs:string"/>
 				<xs:element name="data-urodzenia" type="xs:date" minOccurs="0"/>
-				
-				<xs:element name="adres" type="Adres"/>
+				<xs:element name="adres">
+					<!-- Typ anonimowy, złożony -->
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ulica" type="xs:string"/>
+							<xs:element name="nr-domu" type="xs:string"/>
+							<xs:element name="nr-mieszkania" type="xs:string" minOccurs="0"/>
+							<xs:element name="kod-pocztowy" type="xs:string"/>
+							<xs:element name="miejscowosc" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
-		
 	</xs:element>
-	
-	<xs:complexType name="Adres">
-		<xs:sequence>
-			<xs:element name="ulica" type="xs:string"/>
-			<xs:element name="nr-domu" type="xs:string"/>
-			<xs:element name="nr-mieszkania" type="xs:string" minOccurs="0"/>
-			<xs:element name="kod-pocztowy" type="xs:string"/>
-			<xs:element name="miejscowosc" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
 </xs:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="osoba">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="imie" type="xs:string" maxOccurs="3"/>
+				<xs:element name="nazwisko" type="xs:string"/>
+				<xs:element name="data-urodzenia" type="xs:date" minOccurs="0"/>
+				<xs:element name="adres" type="Adres"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Typ nazwany, złożony. Różne elementy mogłyby być tego samego typu. -->
+	<xs:complexType name="Adres">
+		<xs:sequence>
+			<xs:element name="ulica" type="xs:string"/>
+			<xs:element name="nr-domu" type="xs:string"/>
+			<xs:element name="nr-mieszkania" type="xs:string" minOccurs="0"/>
+			<xs:element name="kod-pocztowy" type="xs:string"/>
+			<xs:element name="miejscowosc" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
