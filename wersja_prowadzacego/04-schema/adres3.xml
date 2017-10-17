@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="osoby3.xsd">
+  <ulica>ulica</ulica>
+  <nr-domu>nr-domu</nr-domu>
+  <nr-mieszkania>nr-mieszkania</nr-mieszkania>
+  <kod-pocztowy>kod-pocztowy</kod-pocztowy>
+  <miejscowosc>miejscowosc</miejscowosc>
+</adres>
