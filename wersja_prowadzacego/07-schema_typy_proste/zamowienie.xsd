@@ -31,7 +31,13 @@
 	<complexType name="Firma">
 		<sequence>
 			<element name="nazwa" type="string"/>
-			<element name="nip" type="string"/>
+			<element name="nip">
+				<simpleType>
+					<restriction base="token">
+						<pattern value="[1-9][0-9]{9}"/>
+					</restriction>
+				</simpleType>
+			</element>
 			<group ref="tns:WspolneDaneKlienta"/>			
 		</sequence>
 	</complexType>
@@ -40,7 +46,13 @@
 	<complexType name="Adres">
 		<sequence>
 			<element name="ulica" type="string"/>
-			<element name="kod-pocztowy" type="string"/>
+			<element name="kod-pocztowy">
+				<simpleType>
+					<restriction base="string">
+						<pattern value="\d{2}-\d{3}"/>
+					</restriction>
+				</simpleType>
+			</element>
 			<element name="miasto" type="string"/>
 		</sequence>
 	</complexType>

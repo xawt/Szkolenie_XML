@@ -25,7 +25,7 @@
   </s:towar>
   <s:towar id="23">
     <s:nazwa>Pralka</s:nazwa>
-    <s:cena>1999</s:cena>
+    <s:cena>1999.99</s:cena>
     <s:vat>8</s:vat>
     <s:opis>Pierze</s:opis>
   </s:towar>
