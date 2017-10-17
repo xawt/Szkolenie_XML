@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sklep xmlns="http://www.vavatech.pl/sklep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vavatech.pl/sklep sklep.xsd ">
+  <kategoria numer="2">
+    <nazwa>AGD</nazwa>
+    <opis>
+    </opis>
+  </kategoria>
+
+  <kategoria numer="4">
+    <nazwa>RTV</nazwa>
+    <opis>
+    </opis>
+  </kategoria>
+
+  <towar id="0" numer-kategorii="4">
+    <nazwa>nazwa</nazwa>
+    <cena>0.0</cena>
+    <vat>0</vat>
+    <cena-promocyjna do="2001-01-01" od="2001-01-01">0.0</cena-promocyjna>
+    <opis>
+    </opis>
+  </towar>
+</sklep>
