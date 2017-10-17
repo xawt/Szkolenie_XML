@@ -3,4 +3,11 @@
   <imie>imie</imie>
   <nazwisko>nazwisko</nazwisko>
   <data-urodzenia>2001-01-01</data-urodzenia>
+  <p:adres>
+    <ulica>ulica</ulica>
+    <nr-domu>nr-domu</nr-domu>
+    <nr-mieszkania>nr-mieszkania</nr-mieszkania>
+    <kod-pocztowy>kod-pocztowy</kod-pocztowy>
+    <miejscowosc>miejscowosc</miejscowosc>
+  </p:adres>
 </p:osoba>
