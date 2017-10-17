@@ -10,7 +10,7 @@
 		<documentation>Schemat dla zamówień</documentation>
 	</annotation>
 
-	<element name="osoba-fizyczna" type="tns:OsobaFizyczna"></element>
+	<element name="osoba-fizyczna" type="tns:OsobaFizyczna"/>
 
 	<complexType name="OsobaFizyczna">
 		<sequence>
@@ -18,7 +18,7 @@
 			<element name="nazwisko" type="string"></element>
 			<element name="adres" type="tns:Adres"></element>
 			<element name="telefon" type="string"></element>
-			<element name="email" type="string"></element>
+			<element name="email" type="string" minOccurs="0"></element>
 		</sequence>
 	</complexType>
 
