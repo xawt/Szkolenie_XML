@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.vavatech.pl/sklep"
+	xmlns:tns="http://www.vavatech.pl/sklep"
+	elementFormDefault="qualified">
+	
+	<element name="sklep">
+		<complexType>
+			<sequence>
+				<element ref="tns:towar" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="towar">
+		<complexType>
+			<sequence>
+				<element name="nazwa" type="string"/>
+				<element name="cena" type="decimal"/>
+				<element name="vat" type="tns:Vat"/>
+				<element name="cena-promocyjna" type="tns:CenaPromocyjna"
+					minOccurs="0" maxOccurs="unbounded"/>
+				<element name="opis" type="tns:Tekst"/>
+			</sequence>
+			<attribute name="id" type="int"/>
+		</complexType>
+	</element>
+	
+	<simpleType name="Vat">
+		<restriction base="int">
+			<enumeration value="0"/>
+			<enumeration value="5"/>
+			<enumeration value="8"/>
+			<enumeration value="23"/>
+		</restriction>
+	</simpleType>
+	
+	<complexType name="CenaPromocyjna">
+		<simpleContent>
+			<extension base="decimal">
+				<attribute name="od" type="date" use="required"/>
+				<attribute name="do" type="date" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	
+	<complexType name="Tekst" mixed="true">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="em" type="tns:Tekst"/>
+			<element name="link" type="tns:Link"/>
+			<element name="br">
+				<complexType/> <!-- pusta zawartosc -->
+			</element>
+		</choice>
+	</complexType>
+	
+	<complexType name="Link">
+		<complexContent>
+			<extension base="tns:Tekst">
+				<attribute name="href" type="anyURI"/>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>
