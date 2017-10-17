@@ -7,9 +7,22 @@
 	<element name="osoba">
 		<complexType>
 			<sequence>
-				<element name="imie" type="string"/>
+				<element name="imie" type="string" maxOccurs="2"/>
 				<element name="nazwisko" type="string"/>
 				<element name="data-urodzenia" type="date"/>
+				<choice>
+					<element name="nr-dowodu" type="string"/>
+					<element name="nr-paszportu" type="string"/>
+				</choice>
+				
+				<element name="dziecko" minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element name="imie" type="string"/>
+							<element name="data-urodzenia" type="date"/>				
+						</all>
+					</complexType>
+				</element>
 			</sequence>
 		</complexType>
 	</element>

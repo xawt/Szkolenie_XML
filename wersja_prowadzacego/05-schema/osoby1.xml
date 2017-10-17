@@ -3,7 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.example.org/osoby osoby.xsd ">
 	
-	<imie>imie</imie>
-	<nazwisko>nazwisko</nazwisko>
+	<imie>Jan</imie>
+	<imie>Maria</imie>
+	<nazwisko>Rokita</nazwisko>
 	<data-urodzenia>2001-01-01</data-urodzenia>
+	<nr-paszportu>abc1234567</nr-paszportu>
+	
+	<dziecko>
+		<imie>Julia</imie>
+		<data-urodzenia>2008-12-24</data-urodzenia>
+	</dziecko>
 </osoba>
