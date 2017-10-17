@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/osoby"
+	xmlns:tns="http://www.example.org/osoby"
+	elementFormDefault="qualified">
+	
+	<element name="osoba">
+		<complexType>
+			<sequence>
+				<element name="imie" type="string"/>
+				<element name="nazwisko" type="string"/>
+				<element name="data-urodzenia" type="date"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+</schema>
