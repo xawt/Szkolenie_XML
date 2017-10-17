@@ -4,6 +4,14 @@
 	xmlns:tns="http://www.vavatech.pl/sklep"
 	elementFormDefault="qualified">
 	
+	<element name="sklep">
+		<complexType>
+			<sequence>
+				<element ref="tns:towar" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	
 	<element name="towar">
 		<complexType>
 			<sequence>
