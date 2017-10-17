@@ -9,7 +9,7 @@
 			<sequence>
 				<element name="nazwa" type="string"/>
 				<element name="cena" type="decimal"/>
-				<element name="vat" type="int"/>
+				<element name="vat" type="tns:Vat"/>
 				<element name="cena-promocyjna" type="tns:CenaPromocyjna"
 					minOccurs="0" maxOccurs="unbounded"/>
 				<element name="opis" type="string"/>
@@ -17,6 +17,15 @@
 			<attribute name="id" type="int"/>
 		</complexType>
 	</element>
+	
+	<simpleType name="Vat">
+		<restriction base="int">
+			<enumeration value="0"/>
+			<enumeration value="5"/>
+			<enumeration value="8"/>
+			<enumeration value="23"/>
+		</restriction>
+	</simpleType>
 	
 	<complexType name="CenaPromocyjna">
 		<simpleContent>
