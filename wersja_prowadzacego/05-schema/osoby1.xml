@@ -10,7 +10,15 @@
 	<nr-paszportu>abc1234567</nr-paszportu>
 	
 	<dziecko>
-		<imie>Julia</imie>
+		<imie>Ala</imie>
 		<data-urodzenia>2008-12-24</data-urodzenia>
+	</dziecko>
+	<dziecko>
+		<imie>Ola</imie>
+		<data-urodzenia>1998-04-04</data-urodzenia>
+	</dziecko>
+	<dziecko>
+		<imie>Ela</imie>
+		<data-urodzenia>2020-02-02</data-urodzenia>
 	</dziecko>
 </osoba>
