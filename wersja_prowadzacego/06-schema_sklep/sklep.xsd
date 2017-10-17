@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.vavatech.pl/sklep"
+	xmlns:tns="http://www.vavatech.pl/sklep"
+	elementFormDefault="qualified">
+	
+	<element name="towar">
+		<complexType>
+			<sequence>
+				<element name="nazwa" type="string"/>
+				<element name="cena" type="decimal"/>
+				<element name="vat" type="int"/>
+				<element name="cena-promocyjna" type="tns:CenaPromocyjna"
+					minOccurs="0" maxOccurs="unbounded"/>
+				<element name="opis" type="string"/>
+			</sequence>
+			<attribute name="id" type="int"/>
+		</complexType>
+	</element>
+	
+	<complexType name="CenaPromocyjna">
+		<simpleContent>
+			<extension base="decimal">
+				<attribute name="od" type="date" use="required"/>
+				<attribute name="do" type="date" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+</schema>
