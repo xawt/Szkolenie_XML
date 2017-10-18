@@ -2,94 +2,150 @@
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sklep z towarami</title>
+<style type="text/css">
+body {
+	background-color: #FFFFAA;
+}
+
+.kategoria, .towar {
+	display: block;
+	min-width: 320px;
+	max-width: 520px;
+	margin: 30px auto;
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: blue;
+}
+
+.kategoria {
+	background-color: #DDFFFF;
+}
+
+.towar {
+	background-color: #FFFFFF;
+}
+
+nazwa {
+	display: block;
+	font-weight: bold;
+	font-size: larger;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+dfn {
+	font-weight: bold;
+	color: navy;
+}
+</style>
 </head>
 <body>
   
+<div class="kategoria">
     
-<h2></h2>
-    Herbata jest dobra.
+<h2>Herbata</h2>
+    
+<p>Herbata jest dobra.</p>
   
+</div>
   
-    <h2></h2>
-    Dobra kawa też nie jest zła.
+<div class="kategoria">
+    
+<h2>Kawa</h2>
+    
+<p>Dobra kawa też nie jest zła.</p>
   
+</div>
   
-    <h2></h2>
+<div class="kategoria">
+    
+<h2>Czekolada</h2>
   
+</div>
 
   
-    
-<h2></h2>
-    
-    	Opis z wyr&oacute;żnieniem, pojęciem, uwagą oraz odnośnikiem.
-    	
-        Ten fragment ma być od nowej linii.
+<div class="towar">
+<h2>Teekane Gold 80 szt.</h2>
+<div>Cena netto: 012. zł</div>
+<div>Cena brutto: 015. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
+    	Opis z <em>wyr&oacute;żnieniem</em>, <dfn>pojęciem</dfn>, uwagą oraz <a href="http://pl.wikipedia.org">odnośnikiem</a>.
+    	<br>
+        Ten fragment ma być od nowej linii.<br>
         Wprowadzamy jeszcze odnośniki do innych towar&oacute;w: .
-    
-    12
-    23
-    10.99
-  
+    </p>
+</div>
 
   
-    <h2></h2>
-    
+<div class="towar">
+<h2>Milka mleczna</h2>
+<div>Cena netto: 002. zł</div>
+<div>Cena brutto: 003. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
     	Niebieskie krowy dają czekoladę. Takie rzeczy tylko w niemieckich Alpach.
-    	
+    	<br>
     	Wz&oacute;r na czekoladę: x &lt; 15 &amp; y &gt; 7 
-    
-    2.50
-    23
-  
+    </p>
+</div>
 
   
-    <h2></h2>
-    
-    	Herbata w ż&oacute;łtym pudełku mieszczącym 100 sztuk.
+<div class="towar">
+<h2>Lipton 100 szt.</h2>
+<div>Cena netto: 012. zł</div>
+<div>Cena brutto: 015. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
+    	Herbata w ż&oacute;łtym pudełku <em>mieszczącym 100 sztuk</em>.<br>
     	Opłacalny wyb&oacute;r.
-    
-    12
-    23
-    10.99
-    10.49
-    
-    
-  
+    </p>
+</div>
 
   
-    <h2></h2>
-    
-    	Herbata w ż&oacute;łtym pudełku mieszczącym 25 sztuk.
-    	Nieco mniej opłacalny wyb&oacute;r.
-    
-    6.50
-    23
-  
+<div class="towar">
+<h2>Lipton 25 szt.</h2>
+<div>Cena netto: 006. zł</div>
+<div>Cena brutto: 008. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
+    	Herbata w ż&oacute;łtym pudełku <em>mieszczącym 25 sztuk</em>.<br>
+    	
+<em>Nieco mniej opłacalny wyb&oacute;r</em>.
+    </p>
+</div>
 
   
-    <h2></h2>
-    
-    	Kr&oacute;lowa kawy od wielu lat.
-    
-    13
-    23
-    16
-  
+<div class="towar">
+<h2>Jacobs Kr&ouml;nung</h2>
+<div>Cena netto: 013. zł</div>
+<div>Cena brutto: 016. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
+    	Kr&oacute;lowa kawy od <a href="http://www.coffeemoose.pl/historia-firmy-jacobs">wielu lat</a>.
+    </p>
+</div>
 
   
-    <h2></h2>
-    
+<div class="towar">
+<h2>Dilmah black tea</h2>
+<div>Cena netto: 016. zł</div>
+<div>Cena brutto: 020. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
     	Czarna herbata Dilmah. Klasyka smaku.
-    
-    16
-    23
-    17
+    </p>
+</div>
   
   
-  
-    <h2></h2>
-    
-    	Ulubiona kawa rodzinna.
+<div class="towar">
+<h2>Tchibo Family</h2>
+<div>Cena netto: 019. zł</div>
+<div>Cena brutto: 023. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
+    	Ulubiona kawa rodzinna.<br>
     	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
     	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
     	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
@@ -99,65 +155,75 @@
     	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
     	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
     	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
-    
-    19
-    23
-    16
-  
+    </p>
+</div>
 
   
-    <h2></h2>
-    
-    	Czekolada gorzka i twarda.
+<div class="towar">
+<h2>Wedel gorzka</h2>
+<div>Cena netto: 002. zł</div>
+<div>Cena brutto: 003. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
+    	Czekolada gorzka i twarda.<br>
     	Uwaga na zęby
-    
-    2.20
-    23
-  
+    </p>
+</div>
 
   
-    <h2></h2>
-    
+<div class="towar">
+<h2>Wedel mleczna</h2>
+<div>Cena netto: 002. zł</div>
+<div>Cena brutto: 003. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
     	Jeśli ktoś lubi bardziej na słodko, czekolada mleczna będzie OK.
-    
-    2.20
-    23
-  
+    </p>
+</div>
 
   
-    <h2></h2>
-    
+<div class="towar">
+<h2>Ahmad Tea</h2>
+<div>Cena netto: 013. zł</div>
+<div>Cena brutto: 016. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
     	Mocna czarna herbata dla wybrednych. Jak dla mnie smaczniejsza niż .
-    
-    13
-    23
+    </p>
+</div>
   
   
-  
-    <h2></h2>
-    
+<div class="towar">
+<h2>Saga</h2>
+<div>Cena netto: 013. zł</div>
+<div>Cena brutto: 016. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
     	Tania herbata dla oszczędnych. Jednak nie tak tania jak produkty w Biedronce.
-    
-    13
-    23
-  
+    </p>
+</div>
 
   
-    <h2></h2>
-    
+<div class="towar">
+<h2>Samoch&oacute;d</h2>
+<div>Cena netto: 150000. zł</div>
+<div>Cena brutto: 184500. zł</div>
+<div>Stawka VAT: 23%</div>
+<p>
     	Samoch&oacute;d
-    
-    150000
-    23
+    </p>
+</div>
   
   
-  
-  	<h2></h2>
-    
-  	0
-  	0
-  
+<div class="towar">
+<h2>Darmowy</h2>
+<div>Cena netto: 000. zł</div>
+<div>Cena brutto: 000. zł</div>
+<div>Stawka VAT: 0%</div>
+<p></p>
+</div>
 
   
+
 </body>
 </html>
