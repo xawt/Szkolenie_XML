@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><html><body/></html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+	<body>
+		<h2>Kategoria czekolada</h2>
+		<h3>Towar Wedel</h3>
+		<p>Cena: 2.50</p>
+		<h3>Towar Goplana</h3>
+		<p>Cena: 2.49</p>
+		<h2>Kategoria kawa</h2>
+		<h3>Towar Sati</h3>
+		<p>Cena: 5.50</p>
+		<h2>Kategoria herbata</h2>
+		<h3>Towar Ceylon</h3>
+		<p>Cena: 5.50</p>
+		<h3>Towar Lloyd Tea</h3>
+		<p>Cena: 6.40</p>
+		<h3>Towar Saga</h3>
+		<p>Cena: 3.39</p>
+	</body>
+</html>
