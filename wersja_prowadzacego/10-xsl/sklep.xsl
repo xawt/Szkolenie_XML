@@ -27,4 +27,20 @@
 		</em>
 	</xsl:template>
 	
+	<xsl:template match="term">
+		<dfn>
+			<xsl:apply-templates />
+		</dfn>
+	</xsl:template>
+
+	<xsl:template match="br">
+		<br/>
+	</xsl:template>
+
+	<xsl:template match="link">
+		<a href="{@href}">
+			<xsl:apply-templates />
+		</a>
+	</xsl:template>
+	
 </xsl:stylesheet>
