@@ -1,0 +1,37 @@
+<?xml-stylesheet type="text/xsl" href="sekcje.xsl"?>
+
+<doc>
+	<title>Tytuł dokumentu</title>
+	<section>
+		<title>Rozdział 1</title>
+		<section>
+			<title>Podrozdział 1.1</title>
+			<p>Ala ma kota</p>
+			<p>Kot miauczy.</p>
+			<p>I jest czarny.</p>
+		</section>
+		<section>
+			<title>Podrozdział 1.2</title>
+			<title>Podrozdział 1.2</title>
+			<p>Ola ma psa</p>
+			<p>Pies ma kość</p>
+		</section>
+	</section>
+	
+	<section>
+		<title>Rozdział 2</title>
+		<section>
+			<title>Podrozdział 2.1</title>
+			<cosinnego>Coś innego.</cosinnego>
+			<p>Ala ma kota</p>
+		</section>
+		<section>
+			<title>Podrozdział 2.2</title>
+			<p>Ola ma psa</p>
+		</section>
+		<section>
+			<p>Sekcja bez tytułu, to p jest pierwszym dzieckiem</p>
+			<p>Drugie dziecko</p>
+		</section>
+	</section>
+</doc>
