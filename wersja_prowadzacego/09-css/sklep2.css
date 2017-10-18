@@ -9,21 +9,9 @@ kategoria, towar {
 	max-width: 520px;
 	margin: 30px auto;
 	padding: 10px;
-	border-style: outset;
-	border-width: 4px;
+	border-style: solid;
+	border-width: 2px;
 	border-color: blue;
-}
-
-towar:hover {
-	border-style: inset;
-}
-
-towar:hover nazwa {
-	color: blue;
-}
-
-towar[id-kategorii="herbata"] {
-	background-color: #CCFFCC;
 }
 
 kategoria {
@@ -87,3 +75,6 @@ term {
 br {
 	display: block;
 }
+
+
+
