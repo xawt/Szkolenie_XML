@@ -8,7 +8,6 @@
 		<html>
 			<head>
 				<title>Sklep z towarami</title>
-				<xsl:call-template name="wstaw-css"/>
 			</head>
 			<body>
 				<xsl:apply-templates />	
@@ -72,45 +71,5 @@
 			<xsl:apply-templates />
 		</a>
 	</xsl:template>
-
-
-	<xsl:template name="wstaw-css">
-<style type="text/css">
-body {
-	background-color: #FFFFAA;
-}
-
-.kategoria, .towar {
-	display: block;
-	min-width: 320px;
-	max-width: 520px;
-	margin: 30px auto;
-	padding: 10px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: blue;
-}
-
-.kategoria {
-	background-color: #DDFFFF;
-}
-
-.towar {
-	background-color: #FFFFFF;
-}
-
-nazwa {
-	display: block;
-	font-weight: bold;
-	font-size: larger;
-	text-align: center;
-	margin-bottom: 0.5em;
-}
-
-dfn {
-	font-weight: bold;
-	color: navy;
-}
-</style>
-	</xsl:template>
+	
 </xsl:stylesheet>
