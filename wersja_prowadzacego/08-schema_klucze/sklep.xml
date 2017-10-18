@@ -12,12 +12,31 @@
     </opis>
   </kategoria>
 
-  <towar id="0" numer-kategorii="4">
-    <nazwa>nazwa</nazwa>
-    <cena>0.0</cena>
-    <vat>0</vat>
+  <towar id="1" numer-kategorii="4">
+    <nazwa>Telewizor 40"</nazwa>
+    <cena>1888.00</cena>
+    <vat>23</vat>
     <cena-promocyjna do="2001-01-01" od="2001-01-01">0.0</cena-promocyjna>
     <opis>
+    Telewizor mniejszy niż <inny-towar id="2"/>.
+    </opis>
+  </towar>
+
+  <towar id="2" numer-kategorii="4">
+    <nazwa>Telewizor 52"</nazwa>
+    <cena>2488.00</cena>
+    <vat>23</vat>
+    <opis>
+    Telewizor <em>większy niż <inny-towar id="1"/></em>.
+    </opis>
+  </towar>
+
+  <towar id="3" numer-kategorii="2">
+    <nazwa>Pralka samopiorąca</nazwa>
+    <cena>2488.00</cena>
+    <vat>23</vat>
+    <opis>
+    Fajna rzecz.
     </opis>
   </towar>
 </sklep>

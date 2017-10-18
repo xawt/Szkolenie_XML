@@ -18,7 +18,16 @@
 		</key>
 		<keyref name="TowaryDoKategorii" refer="tns:KluczKategorii">
 			<selector xpath="tns:towar"/>
-			<field xpath="@numer-kategorii"></field>
+			<field xpath="@numer-kategorii"/>
+		</keyref>
+		
+		<key name="KluczTowaru">
+			<selector xpath="tns:towar"/>
+			<field xpath="@id"/>
+		</key>
+		<keyref name="InneTowary" refer="tns:KluczTowaru">
+			<selector xpath=".//tns:inny-towar"/>
+			<field xpath="@id"></field>
 		</keyref>
 	</element>
 	
@@ -62,6 +71,12 @@
 			<element name="link" type="tns:Link"/>
 			<element name="br">
 				<complexType/> <!-- pusta zawartosc -->
+			</element>
+			
+			<element name="inny-towar">
+				<complexType>
+					<attribute name="id" type="int"/>
+				</complexType>
 			</element>
 		</choice>
 	</complexType>
