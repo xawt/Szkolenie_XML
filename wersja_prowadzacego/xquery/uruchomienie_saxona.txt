@@ -1,0 +1,1 @@
+java -cp saxon9he.jar net.sf.saxon.Query -q:sklep1.xq -o:wynik1.xml
