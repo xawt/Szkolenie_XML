@@ -12,7 +12,7 @@ import org.xml.sax.helpers.DefaultHandler;
 public class WypiszNs2 {
 
 	public static void main(String[] args) {
-		String plik = "wersja_prowadzacego/04-schema/osoby5a.xml";
+		String plik = "wersja_prowadzacego/04-schema/osoby4a.xml";
 		
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();

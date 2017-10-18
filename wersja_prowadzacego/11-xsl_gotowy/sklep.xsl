@@ -21,7 +21,7 @@
 				<h1>Sklep - wersja z dodatkami</h1>
 				<xsl:apply-templates />
 				
-				<div>
+				<div style="background-color:white">
 					<h1>Podsumowanie</h1>
 					<p>Liczba towarów: <xsl:value-of select="count(//towar)"/></p>
 					<p>Średnia cena: <xsl:value-of select="sum(//towar/cena) div count(//towar)"/></p>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+	<xsl:output method="xml" indent="yes"/>
+
 <!-- Zmienia ceny towarów z podanej kategorii lub wszystkich jeśli brak kategorii. -->
 	<xsl:param name="zmiana" select="10"/>
-	<xsl:param name="kategoria" select="'kawa'"/>
+	<xsl:param name="kategoria"/>
 
 	<xsl:template match="cena[../@id-kategorii = $kategoria or not($kategoria)]">
 		<xsl:copy>
