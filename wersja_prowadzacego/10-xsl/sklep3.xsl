@@ -3,7 +3,6 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:output method="html"/>
-	<xsl:decimal-format decimal-separator="," grouping-separator=" "/>
 
 	<xsl:template match="/">
 		<html>
@@ -12,13 +11,7 @@
 				<xsl:call-template name="wstaw-css"/>
 			</head>
 			<body>
-				<xsl:for-each select="/sklep/kategoria">
-					<xsl:sort select="nazwa" data-type="text"/>
-					<xsl:apply-templates select="."/>
-					<xsl:apply-templates select="/sklep/towar[@id-kategorii = current()/@id-kategorii]">
-						<xsl:sort select="cena" data-type="number" order="descending"/>
-					</xsl:apply-templates>
-				</xsl:for-each>
+				<xsl:apply-templates />	
 			</body>
 		</html>
 	</xsl:template>
@@ -31,20 +24,22 @@
 
 	<xsl:template match="towar">
 		<div class="towar">
-			<xsl:apply-templates select="nazwa"/>
-				
-			<div>Cena netto: <xsl:value-of select="format-number(cena, '# ###,00')"/> zł</div>
-			<div>Cena brutto: <xsl:value-of select="format-number(cena * (1 + vat div 100), '# ###,00')"/> zł</div>
-			<div>Stawka VAT: <xsl:value-of select="vat"/>%</div>
-							
-			<xsl:apply-templates select="opis"/>	
-		</div>
+			<xsl:apply-templates />	
+		</div>		
 	</xsl:template>
 	
 	<xsl:template match="nazwa">
 		<h2>
 			<xsl:apply-templates />
 		</h2>
+	</xsl:template>
+	
+	<xsl:template match="cena">
+		<div>Cena: <xsl:value-of select="format-number(. , '0.00')"/> zł</div>
+	</xsl:template>
+	
+	<xsl:template match="vat">
+		<div>Stawka VAT: <xsl:apply-templates/>%</div>
 	</xsl:template>
 	
 	<xsl:template match="cena-promocyjna">

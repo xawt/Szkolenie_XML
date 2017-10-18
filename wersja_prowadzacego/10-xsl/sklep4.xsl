@@ -12,13 +12,7 @@
 				<xsl:call-template name="wstaw-css"/>
 			</head>
 			<body>
-				<xsl:for-each select="/sklep/kategoria">
-					<xsl:sort select="nazwa" data-type="text"/>
-					<xsl:apply-templates select="."/>
-					<xsl:apply-templates select="/sklep/towar[@id-kategorii = current()/@id-kategorii]">
-						<xsl:sort select="cena" data-type="number" order="descending"/>
-					</xsl:apply-templates>
-				</xsl:for-each>
+				<xsl:apply-templates />	
 			</body>
 		</html>
 	</xsl:template>
