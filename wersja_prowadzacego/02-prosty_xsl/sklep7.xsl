@@ -27,8 +27,7 @@
 	
 	<xsl:template match="sklep">
 		<h1>Towary z kategorii <xsl:value-of select="$kat"/> </h1>		
-		<xsl:apply-templates select="kategoria[@id-kategorii = $kat or not($kat)]"/>
-		<xsl:apply-templates select="towar[@id-kategorii = $kat or not($kat)]"/>
+		<xsl:apply-templates select="*[@id-kategorii = $kat or not($kat)]"/>
 	</xsl:template>
 	
 	
