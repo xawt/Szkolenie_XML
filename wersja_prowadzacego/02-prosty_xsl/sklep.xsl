@@ -49,6 +49,7 @@
 			<div>Stawka VAT: <xsl:value-of select="vat" />%</div>
 		
 			<xsl:apply-templates select="opis" />
+			<xsl:apply-templates select="cena-promocyjna"/>
 			
 			<xsl:if test="vat &lt; 23">
 				<p>Ten towar posiada obniżoną stawkę VAT.</p>
@@ -98,7 +99,7 @@
 	
 	<xsl:template match="cena-promocyjna">
 		<div class="promo">
-			Cena promocyjna <xsl:apply-templates />
+			Cena promocyjna <xsl:value-of select="format-number(., '0.00')"/>
 		</div>
 	</xsl:template>
 	
