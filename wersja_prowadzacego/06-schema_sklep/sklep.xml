@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<towar id="0" xmlns="http://www.vavatech.pl/sklep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vavatech.pl/sklep sklep.xsd ">
-  <nazwa>nazwa</nazwa>
-  <cena>200.0</cena>
-  <vat>23</vat>
-  <cena-promocyjna do="2001-01-01" od="2001-01-01">0.0</cena-promocyjna>
-  <opis>opis</opis>
-</towar>

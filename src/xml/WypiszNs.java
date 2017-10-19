@@ -12,7 +12,10 @@ import org.xml.sax.helpers.DefaultHandler;
 public class WypiszNs {
 
 	public static void main(String[] args) {
-		String plik = "wersja_prowadzacego/02-przestrzenie_nazw/ns1.xml";
+		String plik = "pliki/sklep_ns.xml";
+		if(args.length > 0) {
+			plik = args[0];
+		}
 		
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
