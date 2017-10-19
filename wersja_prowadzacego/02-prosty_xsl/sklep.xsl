@@ -8,6 +8,7 @@
 		<html>
 			<head>
 				<title>Sklepik</title>
+				<xsl:call-template name="wstaw-css"/>
 			</head>
 			<body>
 				<xsl:apply-templates />
@@ -71,6 +72,40 @@
 	</xsl:template>
 
 	<xsl:template match="cena-promocyjna">
+	</xsl:template>
+	
+	
+	<xsl:template name="wstaw-css">
+<style type="text/css">
+body {
+	background-color: #FFFFCC;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	font-size: 12pt;
+}
+
+.towar, .kategoria {
+	display: block;
+	background-color: white;
+	min-width: 400px;
+	max-width: 600px;
+	margin: 1em auto;
+	padding: 0.5em;
+	border-style: groove;
+	border-width: 6px;
+	border-color: green;
+}
+
+
+h2 {
+	text-align: center;
+	display: block;
+	font-size: 120%;
+}
+
+.promo {
+	font-size: smaller;
+}
+</style>
 	</xsl:template>
 		
 </xsl:stylesheet>
