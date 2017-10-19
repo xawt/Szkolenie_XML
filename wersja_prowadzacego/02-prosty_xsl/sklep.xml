@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="sklep.xsl"?>
+
+<!-- Data modyfikacji: 2016-11-17 -->
+<sklep>
+  <kategoria id-kategorii="herbata">
+    <nazwa>Herbata</nazwa>
+    <opis>Herbata jest dobra.</opis>
+  </kategoria>
+  <kategoria id-kategorii="kawa">
+    <nazwa>Kawa</nazwa>
+    <opis>Dobra kawa też nie jest zła.</opis>
+  </kategoria>
+  <kategoria id-kategorii="czeko">
+    <nazwa>Czekolada</nazwa>
+  </kategoria>
+
+  <towar id-kategorii="herbata" id-towaru="teekane-gold">
+    <nazwa>Teekane Gold 80 szt.</nazwa>
+    <opis>
+    	Opis z <em>wyróżnieniem</em>, <term>pojęciem</term>, <rem>uwagą</rem> oraz <link href="http://pl.wikipedia.org">odnośnikiem</link>.
+    	<br/>
+        Ten fragment ma być od nowej linii.<br/>
+        Wprowadzamy jeszcze odnośniki do innych towarów: <inny-towar ref="lipton100"/>.
+    </opis>
+    <cena>12</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-17" do="2016-11-18">10.99</cena-promocyjna>
+  </towar>
+
+  <towar id-kategorii="czeko" id-towaru="milka-m">
+    <nazwa>Milka mleczna</nazwa>
+    <opis>
+    	Niebieskie krowy dają czekoladę. Takie rzeczy tylko w niemieckich Alpach.
+    	<br/>
+    	<![CDATA[Wzór na czekoladę: x < 15 & y > 7 ]]>
+    </opis>
+    <cena>2.50</cena>
+    <vat>23</vat>
+  </towar>
+
+  <towar id-kategorii="herbata" id-towaru="lipton100">
+    <nazwa>Lipton 100 szt.</nazwa>
+    <opis>
+    	Herbata w żółtym pudełku <em>mieszczącym 100 sztuk</em>.<br/>
+    	Opłacalny wybór.
+    </opis>
+    <cena>12</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-20" do="2016-11-21">10.99</cena-promocyjna>
+    <cena-promocyjna od="2016-11-10" do="2016-11-30">10.49</cena-promocyjna>
+    
+    <!--  Komentarz herbaty -->
+  </towar>
+
+  <towar id-kategorii="herbata" id-towaru="lipton25">
+    <nazwa>Lipton 25 szt.</nazwa>
+    <opis>
+    	Herbata w żółtym pudełku <em>mieszczącym 25 sztuk</em>.<br/>
+    	<em><rem>Nieco mniej</rem> opłacalny wybór</em>.
+    </opis>
+    <cena>6.50</cena>
+    <vat>23</vat>
+  </towar>
+
+  <towar id-kategorii="kawa" id-towaru="jacobs-k">
+    <nazwa>Jacobs Krönung</nazwa>
+    <opis>
+    	Królowa kawy od <link href="http://www.coffeemoose.pl/historia-firmy-jacobs">wielu lat</link>.
+    </opis>
+    <cena>13</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-18" do="2017-04-18">16</cena-promocyjna>
+  </towar>
+
+  <towar id-kategorii="herbata" id-towaru="dilmah">
+    <nazwa>Dilmah black tea</nazwa>
+    <opis>
+    	Czarna herbata Dilmah. Klasyka smaku.
+    </opis>
+    <cena>16</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-12" do="2016-11-21">17</cena-promocyjna>
+  </towar>
+  
+  <towar id-kategorii="kawa" id-towaru="tchibo">
+    <nazwa>Tchibo Family</nazwa>
+    <opis>
+    	Ulubiona kawa rodzinna.<br/>
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    </opis>
+    <cena>19</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-20" do="2016-11-21">16</cena-promocyjna>
+  </towar>
+
+  <towar id-kategorii="czeko" id-towaru="wedel-g">
+    <nazwa>Wedel gorzka</nazwa>
+    <opis>
+    	Czekolada gorzka i twarda.<br/>
+    	<rem>Uwaga na zęby</rem>
+    </opis>
+    <cena>2.20</cena>
+    <vat>23</vat>
+  </towar>
+
+  <towar id-kategorii="czeko" id-towaru="wedel-m">
+    <nazwa>Wedel mleczna</nazwa>
+    <opis>
+    	Jeśli ktoś lubi bardziej na słodko, czekolada mleczna będzie OK.
+    </opis>
+    <cena>2.20</cena>
+    <vat>23</vat>
+  </towar>
+
+  <towar id-kategorii="herbata" id-towaru="ahmad">
+    <nazwa>Ahmad Tea</nazwa>
+    <opis>
+    	Mocna czarna herbata dla wybrednych. Jak dla mnie smaczniejsza niż <inny-towar ref="lipton100"/>.
+    </opis>
+    <cena>13</cena>
+    <vat>23</vat>
+  </towar>
+  
+  <towar id-kategorii="herbata" id-towaru="saga">
+    <nazwa>Saga</nazwa>
+    <opis>
+    	Tania herbata dla oszczędnych. <rem>Jednak nie tak tania jak produkty w Biedronce.</rem>
+    </opis>
+    <cena>13</cena>
+    <vat>23</vat>
+  </towar>
+
+  <towar id-towaru="auto">
+    <nazwa>Samochód</nazwa>
+    <opis>
+    	Samochód
+    </opis>
+    <cena>150000</cena>
+    <vat>23</vat>
+  </towar>
+  
+  <towar id-towaru="Wirtualny">
+  	<nazwa>Darmowy</nazwa>
+    <opis/>
+  	<cena>0</cena>
+  	<vat>0</vat>
+  </towar>
+
+  <!--
+  <towar id-towaru="Bezcenny">
+  	<nazwa>Bezcenny</nazwa>
+  </towar>
+  -->
+</sklep>
