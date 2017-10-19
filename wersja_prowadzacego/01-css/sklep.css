@@ -1,0 +1,50 @@
+
+sklep {
+	background-color: #FFFFDD;
+}
+
+kategoria, towar {
+	display: block;
+	min-width: 420px;
+	max-width: 640px;
+	margin: 20px auto;
+	padding: 8px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+}
+
+towar {
+	background-color: #EEFFEE;
+}
+
+towar[id-kategorii="herbata"] {
+	border-color: maroon;
+}
+
+nazwa {
+	display: block;
+	font-weight: bold;
+}
+
+kategoria nazwa {
+	font-style: italic;	
+}
+
+cena, vat, opis {
+	display: block;
+}
+
+cena:before {
+	content: "Cena: ";
+	color: grey;
+}
+
+cena:after {
+	content: "zł";
+}
+
+cena-promocyjna {
+	display: none;
+}
+
