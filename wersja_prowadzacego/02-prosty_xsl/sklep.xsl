@@ -17,7 +17,7 @@
 	</xsl:template>
 	
 	<xsl:template match="kategoria">
-		<div class="kategoria">
+		<div class="kategoria" id="k-{@id-kategorii}">
 			<xsl:apply-templates select="nazwa"/>
 			<xsl:apply-templates select="opis"/>
 			
@@ -36,7 +36,11 @@
 		<div class="towar" id="t-{@id-towaru}" >
 			<xsl:apply-templates select="nazwa" />
 			
-			
+			<p class="kategoria-towaru">
+				Kategoria <a href="#k-{@id-kategorii}">
+					<xsl:value-of select="/sklep/kategoria[@id-kategorii = current()/@id-kategorii]/nazwa"/>
+				</a>.
+			</p>
 		
 			<div>Cena brutto: <xsl:value-of
 				select="format-number(cena, '0.00')" /> zł</div>
