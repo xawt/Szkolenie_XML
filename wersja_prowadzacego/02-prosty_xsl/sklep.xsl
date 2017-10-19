@@ -17,22 +17,26 @@
 	</xsl:template>
 	
 	<xsl:template match="kategoria">
-		<xsl:variable name="id-kat" select="@id-kategorii"/>
 		<div class="kategoria">
 			<xsl:apply-templates select="nazwa"/>
 			<xsl:apply-templates select="opis"/>
 			
 			<ul>
-			<xsl:for-each select="/sklep/towar[@id-kategorii = $id-kat]">
-				<li><xsl:value-of select="nazwa"/></li>
+			<!-- w poniższym select . oznacza towar, a current() oznacza kategoria -->
+			<xsl:for-each select="/sklep/towar[@id-kategorii = current()/@id-kategorii]">
+				<li>
+					<a href="#t-{@id-towaru}"><xsl:value-of select="nazwa"/></a>
+				</li>
 			</xsl:for-each>
 			</ul>
 		</div>
 	</xsl:template>
 	
 	<xsl:template match="towar">
-		<div class="towar">
+		<div class="towar" id="t-{@id-towaru}" >
 			<xsl:apply-templates select="nazwa" />
+			
+			
 		
 			<div>Cena brutto: <xsl:value-of
 				select="format-number(cena, '0.00')" /> zł</div>
