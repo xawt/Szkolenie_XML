@@ -110,7 +110,7 @@
     	<rem>Uwaga na zęby</rem>
     </opis>
     <cena>2.20</cena>
-    <vat>23</vat>
+    <vat>8</vat>
   </towar>
 
   <towar id-kategorii="czeko" id-towaru="wedel-m">
@@ -119,7 +119,7 @@
     	Jeśli ktoś lubi bardziej na słodko, czekolada mleczna będzie OK.
     </opis>
     <cena>2.20</cena>
-    <vat>23</vat>
+    <vat>8</vat>
   </towar>
 
   <towar id-kategorii="herbata" id-towaru="ahmad">

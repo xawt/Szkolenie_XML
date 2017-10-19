@@ -24,7 +24,19 @@
 	
 	<xsl:template match="towar">
 		<div class="towar">
-			<xsl:apply-templates />
+			<xsl:apply-templates select="nazwa" />
+		
+			<div>Cena brutto: <xsl:value-of
+				select="format-number(cena, '0.00')" /> zł</div>
+			<div>Cena netto: <xsl:value-of
+				select="format-number(cena div (1 + vat div 100), '0.00')" /> zł</div>
+			<div>Stawka VAT: <xsl:value-of select="vat" />%</div>
+		
+			<xsl:apply-templates select="opis" />
+			
+			<xsl:if test="vat &lt; 23">
+				<p>Ten towar posiada obniżoną stawkę VAT.</p>
+			</xsl:if>
 		</div>
 	</xsl:template>
 	
@@ -68,15 +80,6 @@
 		</a>
 	</xsl:template>
 	
-
-	<xsl:template match="cena">
-		<div>Cena: <xsl:apply-templates /> zł</div>
-	</xsl:template>
-	
-	<xsl:template match="vat">
-		<div>Stawka VAT: <xsl:apply-templates/>%</div>
-	</xsl:template>
-
 	<xsl:template match="cena-promocyjna">
 		<div class="promo">
 			Cena promocyjna <xsl:apply-templates />
