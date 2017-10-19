@@ -23,10 +23,8 @@
 			<xsl:apply-templates select="opis"/>
 			
 			<ul>
-			<xsl:for-each select="/sklep/towar">
-				<xsl:if test="@id-kategorii = $id-kat ">
-					<li><xsl:value-of select="nazwa"/></li>
-				</xsl:if>
+			<xsl:for-each select="/sklep/towar[@id-kategorii = $id-kat]">
+				<li><xsl:value-of select="nazwa"/></li>
 			</xsl:for-each>
 			</ul>
 		</div>
