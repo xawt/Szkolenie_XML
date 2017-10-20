@@ -28,7 +28,7 @@
 	</xsl:template>
 	
 	<xsl:template match="ExchangeRatesTable">
-		<fo:block>Tabela <xsl:value-of select="No"/> z dnia <xsl:value-of select="EffectiveDate"/></fo:block>
+		<fo:block>Tabela <xsl:apply-templates select="No"/> z dnia <xsl:apply-templates select="EffectiveDate"/></fo:block>
 	</xsl:template>
 
 </xsl:stylesheet>
