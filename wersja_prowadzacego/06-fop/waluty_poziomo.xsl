@@ -7,6 +7,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.w3.org/1999/XSL/Format fop.xsd">
 	
+	<xsl:param name="ile-kolumn" select="4"/>
+	
 	<xsl:template match="/">
 		<fo:root font-family="Arial" font-size="10pt">
 			<fo:layout-master-set>			
@@ -28,94 +30,75 @@
 	</xsl:template>
 	
 	<xsl:template match="ExchangeRatesTable">
-		<fo:block-container page-break-before="always">
+		<fo:block-container page-break-inside="avoid">
 		<fo:block
 			font-weight="bold"
 			font-size="14pt"
 			margin-bottom="6pt"
+			margin-top="12pt"
 		>Tabela <xsl:apply-templates select="No"/> z dnia <xsl:apply-templates select="EffectiveDate"/></fo:block>
 		<xsl:apply-templates select="Rates"/>
 		</fo:block-container>
 	</xsl:template>
 	
 	<xsl:template match="Rates">
-		<fo:table border-style="solid">
-			<fo:table-header>
-				<fo:table-row>
-					<fo:table-cell xsl:use-attribute-sets="styl-komorki-h">
-						<fo:block>Kod</fo:block>
-					</fo:table-cell>
-					<fo:table-cell xsl:use-attribute-sets="styl-komorki-h">
-						<fo:block>Waluta</fo:block>
-					</fo:table-cell>
-					<fo:table-cell xsl:use-attribute-sets="styl-komorki-h">
-						<fo:block>Kurs</fo:block>
-					</fo:table-cell>
-					<fo:table-cell xsl:use-attribute-sets="styl-komorki-h">
-						<fo:block>Poprzedni kurs</fo:block>
-					</fo:table-cell>
-					<fo:table-cell xsl:use-attribute-sets="styl-komorki-h">
-						<fo:block>Zmiana %</fo:block>
-					</fo:table-cell>
-				</fo:table-row>
-			</fo:table-header>
+		<fo:table>
+			<xsl:call-template name="repeat">
+				<xsl:with-param name="n" select="3"/>
+				<xsl:with-param name="tresc">
+					<fo:table-column width="3cm"/>
+				</xsl:with-param>
+			</xsl:call-template>
 			<fo:table-body>
-				<xsl:apply-templates select="Rate">
-					<xsl:sort select="Code" order="descending"/>
-				</xsl:apply-templates>
+				<xsl:call-template name="wypisz-kilka">
+					<xsl:with-param name="rekordy" select="Rate"/>
+				</xsl:call-template>
 			</fo:table-body>
 		</fo:table>
 	</xsl:template>
 	
 	<xsl:template match="Rate">
-		<xsl:variable name="poprzedni-kurs"
-			select="preceding::Rate[Code = current()/Code][1]/Mid"/>
-			
-		<xsl:variable name="kolor">
-			<xsl:choose>
-				<xsl:when test="Mid > $poprzedni-kurs">#BBFFDD</xsl:when>
-				<xsl:when test="Mid &lt; $poprzedni-kurs">#FFCCCC</xsl:when>
-				<xsl:otherwise>white</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
-	
-		<fo:table-row background-color="{$kolor}">
-			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
+		<fo:table-cell xsl:use-attribute-sets="styl-komorki">
 				<fo:block>
 				<xsl:apply-templates select="Code"/>
-				</fo:block>
-			</fo:table-cell>
-			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
-				<fo:block>
-				<xsl:apply-templates select="Currency"/>
-				</fo:block>
-			</fo:table-cell>
-			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
-				<fo:block>
+				<xsl:text> : </xsl:text>
 				<xsl:apply-templates select="Mid"/>
 				</fo:block>
 			</fo:table-cell>
-			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
-				<fo:block>
-				<xsl:value-of select="$poprzedni-kurs"/>
-				</fo:block>
-			</fo:table-cell>
-			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
-				<fo:block>
-				<xsl:value-of select="format-number((Mid - $poprzedni-kurs) div $poprzedni-kurs, '0.0%')"/>
-				</fo:block>
-			</fo:table-cell>
+	</xsl:template>
+	
+	<xsl:template name="wypisz-kilka">
+		<xsl:param name="ile" select="$ile-kolumn"/>
+		<xsl:param name="rekordy"/>
+		<xsl:variable name="reszta" select="$rekordy[position() > $ile]"/>
+		
+		<fo:table-row>
+			<xsl:apply-templates select="$rekordy[position() &lt;= $ile]"/>
 		</fo:table-row>
+		<xsl:if test="$reszta">
+			<xsl:call-template name="wypisz-kilka">
+				<xsl:with-param name="rekordy" select="$reszta"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+	
+	<xsl:template name="repeat">
+		<xsl:param name="tresc"/>
+		<xsl:param name="n" select="0"/>
+		
+		<xsl:if test="$n > 0">
+			<xsl:copy-of select="$tresc"/>
+			<xsl:call-template name="repeat">
+				<xsl:with-param name="tresc" select="$tresc"/>
+				<xsl:with-param name="n" select="$n - 1"/>
+			</xsl:call-template>
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:attribute-set name="styl-komorki">
-		<xsl:attribute name="border-style">dotted solid</xsl:attribute>
+		<xsl:attribute name="border-style">solid</xsl:attribute>
 		<xsl:attribute name="padding">1mm 2mm</xsl:attribute>
 		<xsl:attribute name="text-align">center</xsl:attribute>
 	</xsl:attribute-set>
 
-	<xsl:attribute-set name="styl-komorki-h" use-attribute-sets="styl-komorki">
-		<xsl:attribute name="border-bottom-style">double</xsl:attribute>
-		<xsl:attribute name="font-weight">bold</xsl:attribute>
-	</xsl:attribute-set>
 </xsl:stylesheet>
