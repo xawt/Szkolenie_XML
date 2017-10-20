@@ -29,7 +29,7 @@
   </towar>
 
   <towar id-kategorii="czeko" id-towaru="milka-m">
-    <nazwa>Milka mleczna</nazwa>
+     <nazwa>Milka mleczna</nazwa>
     <opis>
     	Niebieskie krowy dają czekoladę. Takie rzeczy tylko w niemieckich Alpach.
     	<br/>
@@ -80,7 +80,7 @@
     </opis>
     <cena>16</cena>
     <vat>23</vat>
-    <cena-promocyjna od="2017-10-12" do="2017-10-21">17</cena-promocyjna>
+    <cena-promocyjna od="2017-10-12" do="2017-10-21">7</cena-promocyjna>
   </towar>
   
   <towar id-kategorii="kawa" id-towaru="tchibo">
@@ -148,13 +148,13 @@
     <vat>23</vat>
   </towar>
   
-  <towar id-towaru="Wirtualny">
+<!--   <towar id-towaru="Wirtualny">
   	<nazwa>Darmowy</nazwa>
     <opis/>
   	<cena>0</cena>
   	<vat>0</vat>
   </towar>
-
+ -->
   <!--
   <towar id-towaru="Bezcenny">
   	<nazwa>Bezcenny</nazwa>

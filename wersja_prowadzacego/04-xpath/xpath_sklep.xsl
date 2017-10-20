@@ -88,7 +88,7 @@
 			<example>
 				<p>Nazwa najtańszego towaru w sklepie</p>
 				<result>
-				<xsl:copy-of select="nic"/>
+				<xsl:copy-of select="//towar[not(//towar/cena &lt; cena)]/nazwa"/>
 				</result>
 			</example>
 			<xsl:text>&#x0A;</xsl:text><xsl:comment>   ****************************   </xsl:comment><xsl:text>&#x0A;&#x0A;</xsl:text>
