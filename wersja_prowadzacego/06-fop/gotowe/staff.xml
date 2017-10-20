@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="staff-html.xsl" title="Basic"?>
+<company>
+	<name>Extremely professional company</name>
+	<department id="acc">
+		<name>Accountancy</name>
+		<person id="102103" position="specialist">
+			<first-name>Dawid</first-name>
+			<last-name>Paszkiewicz</last-name>
+			<phone type="office">+48223213203</phone>
+			<phone type="fax">+48223213200</phone>
+			<email>paszkiewicz@example.com</email>
+			<salary>2222</salary>
+		</person>
+ 		<person id="102104" position="chief">
+			<first-name>Monika</first-name>
+			<last-name>Domżałowicz</last-name>
+			<phone type="office">+48223213200</phone>
+			<phone type="mobile">+48501502513</phone>
+			<email>mdom@example.com</email>
+			<salary>3500</salary>
+		</person>
+		<person id="102105" position="assistant">
+			<first-name>Arkadiusz</first-name>
+			<last-name>Gierasimczyk</last-name>
+			<phone type="office">+48223213213</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>gieras@example.com</email>
+			<salary>3600</salary>
+		</person>
+		<person id="102106" position="assistant">
+			<first-name>Marek</first-name>
+			<last-name>Kącki</last-name>
+			<phone type="office">+48223213212</phone>
+			<phone type="mobile">+48501502524</phone>
+			<email>kacki@example.com</email>
+			<salary>500</salary>
+		</person>
+		<person id="102107" position="accountant">
+			<first-name>Tomasz</first-name>
+			<last-name>Woźniak</last-name>
+			<phone type="office">+48223213234</phone>
+			<phone type="mobile">+48501502544</phone>
+			<email>wozniak@example.com</email>
+			<salary>2500</salary>
+		</person>
+		<person id="102108" position="specialist">
+			<first-name>Maciej</first-name>
+			<last-name>Chmielnicki</last-name>
+			<phone type="office">+48223213236</phone>
+			<phone type="mobile">+48501502527</phone>
+			<email>chmiel@example.com</email>
+		</person>
+		<person id="102109" position="accountant">
+			<first-name>Patrycja</first-name>
+			<last-name>Ślusarek</last-name>
+			<phone type="office">+48223213216</phone>
+			<phone type="mobile">+48501502594</phone>
+			<salary>5454</salary>
+		</person>
+		<person id="102113" position="technical assistant">
+			<first-name>Robert</first-name>
+			<last-name>Koper</last-name>
+			<phone type="mobile">+48501502111</phone>
+			<email>paszkiewicz@example.com</email>
+			<salary>100000</salary>
+		</person>
+	</department>
+	<department id="cc">
+		<name>Call Center</name>
+		<person position="chief" id="105100">
+			<first-name>Kacper</first-name>
+			<last-name>Bolesta</last-name>
+			<phone type="office">+48223213216</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>bolo@example.com</email>
+			<salary>2400</salary>
+		</person>
+		<person position="assistant" id="105101">
+			<first-name>Adam</first-name>
+			<last-name>Głębocki</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>gleba@example.com</email>
+			<salary>1200</salary>
+		</person>
+		<person position="assistant" id="105102">
+			<first-name>Dariusz</first-name>
+			<last-name>Dylewski</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>dylewski@example.com</email>
+			<salary>2500</salary>
+		</person>
+		<person position="assistant" id="105103">
+			<first-name>Monika</first-name>
+			<last-name>Operlein</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>operlein@example.com</email>
+			<salary>3500</salary>
+		</person>
+		<person position="assistant" id="105104">
+			<first-name>Roksana</first-name>
+			<last-name>Sadowska</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>sadowska@example.com</email>
+			<salary>3000</salary>
+		</person>
+		<person position="assistant" id="105105">
+			<first-name>Marcin</first-name>
+			<last-name>Bielecki</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>mbielecki@example.com</email>
+			<salary>8800</salary>
+		</person>
+		<person position="assistant" id="105106">
+			<first-name>Michał</first-name>
+			<last-name>Glanert</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>glanert@example.com</email>
+			<salary>5500</salary>
+		</person>
+		<person position="assistant" id="105107">
+			<first-name>Olgierd</first-name>
+			<last-name>Stańczyc</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>stanczyc@example.com</email>
+			<salary>4400</salary>
+		</person>
+		<person position="assistant" id="105108">
+			<first-name>Monika</first-name>
+			<last-name>Domagalska</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>domagalska@example.com</email>
+			<salary>4500</salary>
+		</person>
+	</department>
+	<department id="adm">
+		<name>Administration</name>
+		<person position="chief" id="106101">
+			<first-name>Dagmara</first-name>
+			<last-name>Koper</last-name>
+			<phone type="office">+48223213215</phone>
+			<phone type="office">+48223213216</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>d.koper@example.com</email>
+			<salary>2800</salary>
+		</person>
+		<person position="chief" id="106104">
+			<first-name>Katarzyna</first-name>
+			<last-name>Jakubowska</last-name>
+			<phone type="office">+48223413216</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>k.jakubowska@example.com</email>
+			<salary>3000</salary>
+		</person>
+		<person position="assistant" id="106103">
+			<first-name>Krzysztof</first-name>
+			<last-name>Okuniewski</last-name>
+			<phone type="office">+48223213236</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>okuniewski@example.com</email>
+			<salary>1500</salary>
+		</person>
+		<person position="specialist" id="106107">
+			<first-name>Gabriela</first-name>
+			<last-name>Awgul</last-name>
+			<phone type="mobile">+48501502503</phone>
+			<email>awgul@example.com</email>
+			<salary>2500</salary>
+		</person>
+		<person position="specialist" id="106106">
+			<first-name>Jakub</first-name>
+			<last-name>Łakomy</last-name>
+			<phone type="mobile">+48501502503</phone>
+			<email>jakub@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="specialist" id="106113">
+			<first-name>Justyna</first-name>
+			<last-name>Kuziemkowska</last-name>
+			<phone type="office">+48223213227</phone>
+			<phone type="mobile">+48501502527</phone>
+			<email>kuziemkowska@example.com</email>
+			<salary>2400</salary>
+		</person>
+	</department>
+	<department id="cc2">
+		<name>Call Center 2</name>
+		<person position="chief" id="105100">
+			<first-name>Kacper</first-name>
+			<last-name>Bolesta</last-name>
+			<phone type="office">+48223213216</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>bolo@example.com</email>
+			<salary>2500</salary>
+		</person>
+		<person position="assistant" id="105101">
+			<first-name>Adam</first-name>
+			<last-name>Głębocki</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>gleba@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="assistant" id="105102">
+			<first-name>Dariusz</first-name>
+			<last-name>Dylewski</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>dylewski@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="assistant" id="105103">
+			<first-name>Monika</first-name>
+			<last-name>Operlein</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>operlein@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="assistant" id="105104">
+			<first-name>Roksana</first-name>
+			<last-name>Sadowska</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>sadowska@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="assistant" id="105105">
+			<first-name>Marcin</first-name>
+			<last-name>Bielecki</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>mbielecki@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="assistant" id="105106">
+			<first-name>Michał</first-name>
+			<last-name>Glanert</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>glanert@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="assistant" id="105107">
+			<first-name>Olgierd</first-name>
+			<last-name>Stańczyc</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>stanczyc@example.com</email>
+			<salary>2000</salary>
+		</person>
+		<person position="assistant" id="105108">
+			<first-name>Monika</first-name>
+			<last-name>Domagalska</last-name>
+			<phone type="office">+48223213216</phone>
+			<email>domagalska@example.com</email>
+			<salary>2000</salary>
+		</person>
+	</department>
+	<department id="adm2">
+		<name>Administration 2</name>
+		<person position="chief" id="106101">
+			<first-name>Dagmara</first-name>
+			<last-name>Koper</last-name>
+			<phone type="office">+48223213215</phone>
+			<phone type="office">+48223213216</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>d.koper@example.com</email>
+			<salary>3000</salary>
+		</person>
+		<person position="chief" id="106104">
+			<first-name>Katarzyna</first-name>
+			<last-name>Jakubowska</last-name>
+			<phone type="office">+48223413216</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>k.jakubowska@example.com</email>
+			<salary>3000</salary>
+		</person>
+		<person position="assistant" id="106103">
+			<first-name>Krzysztof</first-name>
+			<last-name>Okuniewski</last-name>
+			<phone type="office">+48223213236</phone>
+			<phone type="mobile">+48501502503</phone>
+			<email>okuniewski@example.com</email>
+			<salary>3000</salary>
+		</person>
+		<person position="specialist" id="106107">
+			<first-name>Gabriela</first-name>
+			<last-name>Awgul</last-name>
+			<phone type="mobile">+48501502503</phone>
+			<email>awgul@example.com</email>
+			<salary>3000</salary>
+		</person>
+		<person position="specialist" id="106106">
+			<first-name>Jakub</first-name>
+			<last-name>Łakomy</last-name>
+			<phone type="mobile">+48501502503</phone>
+			<email>jakub@example.com</email>
+			<salary>3000</salary>
+		</person>
+		<person position="specialist" id="106113">
+			<first-name>Justyna</first-name>
+			<last-name>Kuziemkowska</last-name>
+			<phone type="office">+48223213227</phone>
+			<phone type="mobile">+48501502527</phone>
+			<email>kuziemkowska@example.com</email>
+			<salary>3000</salary>
+		</person>
+	</department>
+</company>

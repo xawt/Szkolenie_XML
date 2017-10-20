@@ -1,0 +1,80 @@
+company {
+	display: block;
+	background-color: white;
+	color: #000000;
+	padding:10px;
+	font-family: 'Times New Roman', 'Times', serif;
+	font-size: 12pt;
+}
+
+department {
+	display: block;
+	margin: 30px auto;
+}
+
+name {
+	display: block;
+}
+
+company > name {
+	font-size: 1.5em;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+department > name {
+	font-size: 1.3em;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	font-weight: bold;
+}
+
+person {
+	display: block;
+	margin: 10px auto 10px 30px;
+	padding: 0.75em 1em;
+	width: 200px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #553300;
+	background-color: #EEEEEE;
+}
+
+person[position='chief'] {
+	background-color: #DDFFDD;
+}
+
+person:before {
+	content: attr(position);
+	display: block;
+	font-size: smaller;
+}
+
+first-name, last-name {
+	display: inline;
+	font-size:larger;
+}
+
+person[position='chief'] last-name {
+	font-weight: bold;
+}
+
+phone {
+	display: block;
+}
+
+phone[type='office']:before {
+	content: 'tel. ';
+}
+
+phone[type='mobile']:before {
+	content: 'mob. ';
+}
+
+phone[type='fax']:before {
+	content: 'fax ';
+}
+
+email {
+	font-style: italic;
+}
