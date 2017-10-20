@@ -21,10 +21,14 @@
 			
 			<fo:page-sequence master-reference="strona">
 				<fo:flow flow-name="xsl-region-body">
-					<xsl:apply-templates />
+					<xsl:apply-templates/>
 				</fo:flow>
 			</fo:page-sequence>
 		</fo:root>
+	</xsl:template>
+	
+	<xsl:template match="ExchangeRatesTable">
+		<fo:block>Tabela <xsl:value-of select="No"/> z dnia <xsl:value-of select="EffectiveDate"/></fo:block>
 	</xsl:template>
 
 </xsl:stylesheet>
