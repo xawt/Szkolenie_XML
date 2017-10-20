@@ -15,6 +15,7 @@
 			<xsl:value-of select="Code"/>
 			<xsl:copy-of select="$SEPARATOR"/>
 		</xsl:for-each>
+		<xsl:copy-of select="$NL"/>
 	
 		<xsl:for-each select="//ExchangeRatesTable">
 			<xsl:value-of select="EffectiveDate"/>
