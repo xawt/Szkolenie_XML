@@ -8,7 +8,7 @@
 	xsi:schemaLocation="http://www.w3.org/1999/XSL/Format fop.xsd">
 	
 	<xsl:template match="/">
-		<fo:root>
+		<fo:root font-family="Arial">
 			<fo:layout-master-set>			
 				<fo:simple-page-master master-name="strona"
 					page-height="297mm" page-width="210mm"
@@ -42,22 +42,28 @@
 	
 	<xsl:template match="Rate">
 		<fo:table-row>
-			<fo:table-cell border-style="solid">
+			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
 				<fo:block>
 				<xsl:apply-templates select="Code"/>
 				</fo:block>
 			</fo:table-cell>
-			<fo:table-cell border-style="solid">
+			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
 				<fo:block>
 				<xsl:apply-templates select="Currency"/>
 				</fo:block>
 			</fo:table-cell>
-			<fo:table-cell border-style="solid">
+			<fo:table-cell xsl:use-attribute-sets="styl-komorki">
 				<fo:block>
 				<xsl:apply-templates select="Mid"/>
 				</fo:block>
 			</fo:table-cell>
 		</fo:table-row>
 	</xsl:template>
+	
+	<xsl:attribute-set name="styl-komorki">
+		<xsl:attribute name="border-style">dotted solid</xsl:attribute>
+		<xsl:attribute name="padding">1.5mm</xsl:attribute>
+		
+	</xsl:attribute-set>
 
 </xsl:stylesheet>
