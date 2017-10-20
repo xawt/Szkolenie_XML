@@ -44,7 +44,7 @@
 	<xsl:template match="Rates">
 		<fo:table>
 			<xsl:call-template name="repeat">
-				<xsl:with-param name="n" select="3"/>
+				<xsl:with-param name="n" select="$ile-kolumn"/>
 				<xsl:with-param name="tresc">
 					<fo:table-column width="3cm"/>
 				</xsl:with-param>
