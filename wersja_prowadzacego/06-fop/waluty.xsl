@@ -33,7 +33,7 @@
 	</xsl:template>
 	
 	<xsl:template match="Rates">
-		<fo:table>
+		<fo:table >
 			<fo:table-body>
 				<xsl:apply-templates select="Rate"/>
 			</fo:table-body>
