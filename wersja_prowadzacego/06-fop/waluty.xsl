@@ -33,7 +33,7 @@
 	</xsl:template>
 	
 	<xsl:template match="Rates">
-		<fo:table >
+		<fo:table border-style="solid">
 			<fo:table-body>
 				<xsl:apply-templates select="Rate"/>
 			</fo:table-body>
@@ -42,17 +42,17 @@
 	
 	<xsl:template match="Rate">
 		<fo:table-row>
-			<fo:table-cell>
+			<fo:table-cell border-style="solid">
 				<fo:block>
 				<xsl:apply-templates select="Code"/>
 				</fo:block>
 			</fo:table-cell>
-			<fo:table-cell>
+			<fo:table-cell border-style="solid">
 				<fo:block>
 				<xsl:apply-templates select="Currency"/>
 				</fo:block>
 			</fo:table-cell>
-			<fo:table-cell>
+			<fo:table-cell border-style="solid">
 				<fo:block>
 				<xsl:apply-templates select="Mid"/>
 				</fo:block>
