@@ -12,8 +12,8 @@
 		<xsl:copy-of select="$SEPARATOR"/>
 		<xsl:text>Nr tabeli</xsl:text>
 		<xsl:for-each select="//ExchangeRatesTable[1]//Rate">
-			<xsl:value-of select="Code"/>
 			<xsl:copy-of select="$SEPARATOR"/>
+			<xsl:value-of select="Code"/>
 		</xsl:for-each>
 		<xsl:copy-of select="$NL"/>
 	
