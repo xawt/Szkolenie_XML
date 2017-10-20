@@ -60,7 +60,9 @@
 				</fo:table-row>
 			</fo:table-header>
 			<fo:table-body>
-				<xsl:apply-templates select="Rate"/>
+				<xsl:apply-templates select="Rate">
+					<xsl:sort select="Code" order="descending"/>
+				</xsl:apply-templates>
 			</fo:table-body>
 		</fo:table>
 	</xsl:template>
@@ -116,5 +118,4 @@
 		<xsl:attribute name="border-bottom-style">double</xsl:attribute>
 		<xsl:attribute name="font-weight">bold</xsl:attribute>
 	</xsl:attribute-set>
-
 </xsl:stylesheet>
