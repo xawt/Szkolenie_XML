@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><sklep>
+<kategoria id-kategorii="herbata">
+    <nazwa>Herbata</nazwa>
+    <opis>Herbata jest dobra.</opis>
+  </kategoria>
+<towar id-kategorii="herbata" id-towaru="teekane-gold">
+    <nazwa>Teekane Gold 80 szt.</nazwa>
+    <opis>
+    	Opis z <em>wyróżnieniem</em>, <term>pojęciem</term>, <rem>uwagą</rem> oraz <link href="http://pl.wikipedia.org">odnośnikiem</link>.
+    	<br/>
+        Ten fragment ma być od nowej linii.<br/>
+        Wprowadzamy jeszcze odnośniki do innych towarów: <inny-towar ref="lipton100"/>.
+    </opis>
+    <cena>12</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-17" do="2016-11-18">10.99</cena-promocyjna>
+  </towar>
+<towar id-kategorii="herbata" id-towaru="lipton100">
+    <nazwa>Lipton 100 szt.</nazwa>
+    <opis>
+    	Herbata w żółtym pudełku <em>mieszczącym 100 sztuk</em>.<br/>
+    	Opłacalny wybór.
+    </opis>
+    <cena>12</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-20" do="2016-11-21">10.99</cena-promocyjna>
+    <cena-promocyjna od="2016-11-10" do="2016-11-30">10.49</cena-promocyjna>
+    
+    <!--  Komentarz herbaty -->
+  </towar>
+<towar id-kategorii="herbata" id-towaru="lipton25">
+    <nazwa>Lipton 25 szt.</nazwa>
+    <opis>
+    	Herbata w żółtym pudełku <em>mieszczącym 25 sztuk</em>.<br/>
+    	<em>
+<rem>Nieco mniej</rem> opłacalny wybór</em>.
+    </opis>
+    <cena>6.50</cena>
+    <vat>23</vat>
+  </towar>
+<towar id-kategorii="herbata" id-towaru="dilmah">
+    <nazwa>Dilmah black tea</nazwa>
+    <opis>
+    	Czarna herbata Dilmah. Klasyka smaku.
+    </opis>
+    <cena>16</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-12" do="2016-11-21">17</cena-promocyjna>
+  </towar>
+<towar id-kategorii="herbata" id-towaru="ahmad">
+    <nazwa>Ahmad Tea</nazwa>
+    <opis>
+    	Mocna czarna herbata dla wybrednych. Jak dla mnie smaczniejsza niż <inny-towar ref="lipton100"/>.
+    </opis>
+    <cena>13</cena>
+    <vat>23</vat>
+  </towar>
+<towar id-kategorii="herbata" id-towaru="saga">
+    <nazwa>Saga</nazwa>
+    <opis>
+    	Tania herbata dla oszczędnych. <rem>Jednak nie tak tania jak produkty w Biedronce.</rem>
+    </opis>
+    <cena>13</cena>
+    <vat>23</vat>
+  </towar>
+</sklep>

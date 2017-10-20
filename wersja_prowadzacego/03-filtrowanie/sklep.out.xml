@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><sklep>
+<kategoria id-kategorii="kawa">
+    <nazwa>Kawa</nazwa>
+    <opis>Dobra kawa też nie jest zła.</opis>
+  </kategoria>
+<towar id-kategorii="kawa" id-towaru="jacobs-k">
+    <nazwa>Jacobs Krönung</nazwa>
+    <opis>
+    	Królowa kawy od <link href="http://www.coffeemoose.pl/historia-firmy-jacobs">wielu lat</link>.
+    </opis>
+    <cena>13</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-18" do="2017-04-18">16</cena-promocyjna>
+  </towar>
+<towar id-kategorii="kawa" id-towaru="tchibo">
+    <nazwa>Tchibo Family</nazwa>
+    <opis>
+    	Ulubiona kawa rodzinna.<br/>
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    	Ala ma kota a Ola ma psa. Ala z Olą lubią się jak pies z kotem.
+    </opis>
+    <cena>19</cena>
+    <vat>23</vat>
+    <cena-promocyjna od="2016-11-20" do="2016-11-21">16</cena-promocyjna>
+  </towar>
+</sklep>
